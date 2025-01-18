@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件展示</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* 随机点名 */
+        .QA {
+            margin-top: 50px;
+            margin-left: 200px;
+            width: 500px;
+            height: 150px;
+            font-size: 24px;
+            overflow: hidden;
+            padding: 0px;
+            background-color: rgb(240, 186, 139);
+            text-align: center;
+        }
+
+        .QA p {
+            margin: 10px 0px;
+        }
+
+        .QA div {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+
+        .QA input {
+            font-size: 16px;
+            line-height: 30px;
+            width: 150px;
+            height: 30px;
+        }
+
+        /* 搜素框 */
+        .input {
+            margin-top: 50px;
+            margin-left: 200px;
+            margin-bottom: 200px;
+            text-align: left;
+            font-size: 16px;
+            width: 300px;
+        }
+
+        .input input {
+            width: 300px;
+            font-size: 20px;
+            height: 40px;
+            box-sizing: border-box;
+        }
+
+        .input ul {
+            border: 1px solid black;
+            list-style-type: none;
+            width: 300px;
+            box-sizing: border-box;
+            float: left;
+            display: none;
+            background-color: #ffA;
+        }
+
+        .input ul li {
+            text-indent: 1em;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .bgccg {
+            background-color: #7d7c783c;
+        }
+
+        /* 阅读协议 */
+        .txtform {
+            height: 300px;
+            width: 500px;
+            margin-top: 50px;
+            margin-left: 150px;
+            margin-bottom: 100px;
+            background-color: #E8E8E8;
+            text-align: center;
+            font-size: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .txtform p {
+            margin-top: 10px;
+            line-height: 24px;
+            height: 24px;
+        }
+
+        .txtform textarea {
+            width: 400px;
+            height: 200px;
+            margin-top: 10px;
+            resize: none;
+        }
+
+        .txtform input {
+            width: 200px;
+            height: 30px;
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 随机点名 -->
+    <div class="QA">
+        <p>随机点名</p>
+        <p>
+            <span>名字：</span>
+            <span class="uname">张三</span>
+        </p>
+        <div class="btn">
+            <input type="button" class="inputName" value="输入名字">
+            <input type="button" class="begin" value="开始">
+            <input type="button" class="end" value="结束">
+        </div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="input">
+        <input type="text" placeholder="请输入要搜索的商品名">
+        <ul>
+            <li>日常百货</li>
+            <li>科技数码</li>
+            <li>家具工具</li>
+            <li>图书教辅</li>
+            <li>婴幼儿产品</li>
+        </ul>
+    </div>
+    <!-- 阅读注册协议 -->
+    <form action="" class="txtform">
+        <p>用户协议</p>
+        <textarea disabled>
+            用户协议
+    请您仔细阅读本协议，您点击同意本协议即表示您同意遵守本协议的全部条款。
+    本协议是您与本站（www.xxx.com）之间关于您使用本站服务所订立的协议。本协议内容包括协议正文及所有协议条款。
+    一、定义
+    本协议中，下列词语的含义如下：
+    用户：指使用本站服务的个人。
+    协议：指本协议的全部内容。
+    服务：指由本站提供的各项网络服务，包括但不限于注册、登录、浏览、购物、评价等。
+    注册：指用户登录或使用本站服务时，向本站提供个人信息，并确认同意接受本协议的过程。            
+    登录：指用户使用用户名和密码登录本站，或使用第三方账号（如微信、微博等）登录本站。
+    第三方账号：指除本站注册用户外，用户使用第三方账号（如微信、微博等）登录本站。
+    浏览：指用户通过浏览器、手机客户端或其他方式使用本站服务时，将其浏览、观看、访问的行为。
+    购物：指用户通过本站购买商品、服务、资源等。
+    评价：指用户对商品、服务、资源等进行评价。
+    内容：指由本站提供的各种信息、数据、文本、图片、音频、视频、图表等。
+    隐私：指用户在注册、使用本站服务时，向本站提供的、可以直接或间接识别用户身份的信息。
+    个人信息：指用户注册或使用本站服务时，向本站提供的、能够单独或与其他信息结合识别用户身份的信息。
+    账户：指用户登录或使用本站服务时，本站为其分配的账号，包括用户名、密码、手机号码、邮箱等。
+    交易：指用户通过本站与其他用户进行交易，包括但不限于商品购买、交易撮合、评价等。
+    法律：指用户与本站之间、本站与第三方之间的法律关系。
+    隐私权保护：指用户在使用本站服务时，本站将按照法律法规的规定保护用户的个人信息及隐私权，保护用户的合法权益。
+    免责声明：指用户使用本站服务时，应当明白本站不对用户的任何信息、内容负全部责任，用户自行承担使用风险。
+        </textarea>
+        <input type="button" value="已阅读用户协议(60)" disabled>
+    </form>
+    <script>
+        // 随机点名
+        const arr = ['张三', '李四', '王五', '赵六', '刘大', '倩儿', '胡夏', '里克', '莉莉橘']
+        console.log(arr)
+        const btn1 = document.querySelector('.begin')
+        const btn2 = document.querySelector('.end')
+        const btn3 = document.querySelector('.inputName')
+        const uname = document.querySelector('.uname')
+        let id
+        let numSI = 0
+        let n = 1
+        // 开始随机显示名字
+        btn1.addEventListener('click', function () {
+            if (numSI == 0) {
+                numSI++
+                id = setInterval(function () {
+                    n = Math.floor(Math.random() * arr.length)
+                    uname.innerHTML = arr[n]
+                }, 100)
+            }
+        })
+        // 结束随机点名
+        btn2.addEventListener('click', function () {
+            if (numSI > 0) {
+                numSI--
+                clearInterval(id)
+                arr.splice(n, 1)
+                console.log(arr)
+                if (arr.length == 0) {
+                    btn1.disabled = true
+                    btn2.disabled = true
+                }
+            }
+        })
+        // 添加名字
+        btn3.addEventListener('click', function () {
+            let addname = prompt("请输入名字")
+            if (arr.length == 0) {
+                btn1.disabled = false
+                btn2.disabled = false
+            }
+            arr.push(addname)
+        })
+
+        // 搜索框
+        const input = document.querySelector('.input input')
+        const ulHidden = document.querySelector('.input ul')
+        // 获得焦点，显示建议
+        input.addEventListener('focus', function () {
+            input.classList.toggle('bgccg')
+            ulHidden.style.display = 'block'
+        })
+        // 失去焦点，隐藏建议
+        input.addEventListener('blur', function () {
+            ulHidden.style.display = 'none'
+            input.classList.toggle('bgccg')
+        })
+
+        // 阅读用户协议
+        const btnFrom = document.querySelector('form input')
+        const showTxt = '已阅读用户协议'
+        let countdown = 59
+        let idFrom
+        function readForm() {
+            if (countdown > 0) {
+                btnFrom.value = `${showTxt}(${countdown})`
+                countdown--
+            }
+            else {
+                btnFrom.disabled = false
+                btnFrom.value = '同意'
+                clearInterval(idFrom)
+            }
+        }
+        idFrom = setInterval(readForm, 1000)
+    </script>
+</body>
+
+</html>
